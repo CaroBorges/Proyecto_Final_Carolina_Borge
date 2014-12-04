@@ -1,0 +1,275 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol
+{
+	margin:0;
+	padding:0
+}
+
+@font-face {
+	font-family: 'Conv_mriam';
+	src: url('fonts/mriam.eot');
+	src: local('☺'), url('css/fonts/mriam.woff') format('woff'), url('css/fonts/mriam.ttf') format('truetype'), url('css/fonts/mriam.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html { font-size: 62.5% }
+/*============================== V I D E O  S E C T I O N ============================*/
+
+
+/*Wraper Section*/
+#divWraperVideoSection{
+	
+}
+
+/*header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#divWraperHeader{
+	width: 100%;
+	background-color: #8fc4be;
+	font-size: 1.6rem;/*16*/
+}
+header{
+	max-width:896px;
+	width: 100%;
+	height: 7em;/*112/16*/
+	margin: 0 auto;
+}
+header #logo{
+	float: left;
+	margin-top: 0.4166666666666667em;/*20/48*/
+	width:44.64285714285714%;/*400/896*100*/
+	font-family: 'Muli', sans-serif;
+	color: #ffffff;
+	font-size:4.8rem;/*48*/
+	display: inline-block;
+}
+header #logo span{
+	font-family:'Muli',sans-serif;
+	color: #ffffff;
+	font-size: 2.4rem;/*24*/
+	margin-left: 2.857142857142857%;/*10/350*100*/ 
+}
+header #logo:hover{
+	text-decoration: none;
+	color: white;
+}
+nav{
+	width: 27.34375%;/*245/896*100*/
+	float: right;
+}
+nav ul{
+	margin-top: 2.81em;/*45/16*/ 
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	margin-left:12.6530612244898%;/*31/208*100*/ 
+}
+nav ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'Muli', sans-serif;
+	font-size: 1.6rem;/*16/16*/
+}
+nav ul li a:hover{
+	color: #4aa096;
+	text-decoration: none;
+}
+/********CONTENT************/
+
+#divWraperContent{
+	width: 100%;
+	background-color: #f5f1e6;
+}
+#content{
+	max-width:896px;
+	width: 100%;
+	background-color: #ffffff;
+	border-width:0.3348214285714286%;/*3/16 3/960*100*/
+	border-style:dashed ;
+	border-color: #e1dbc8;
+	margin: 3.8125em auto;/*61/16*/
+	padding: 2.125em 4.017857142857143%;/*40/16 35/896*100*/ /*34 36*/
+}
+#content h1{
+	font-size: 4.0rem;/*40*/
+	color:#8fc4be;
+	font-weight: normal;
+	font-family:'Muli', sans-serif;
+	text-align: center;
+	margin: 0 0 0.8em 0;/*32/40*/
+}
+#content p{
+	margin-top:2.125em;/*34/16*/
+	font-size:1.6rem;/*16*/
+	font-family:'Muli', sans-serif;
+	color: #181818;
+}
+#content p:nth-child(2){
+	margin-top:0px;
+}
+/**********FOOTER*************/
+
+#divWraperFooter{
+	width: 100%;	
+	background-color: #83b759;
+}
+footer{
+	max-width:896px;
+	width: 100%;
+	height: 7.375em;/*118/16*/
+	margin: 0 auto;
+}
+footer span, footer ul{
+	color:#ffffff;
+	font-size:1.6rem;/*16*/
+	font-family:'Muli', sans-serif;
+	margin-top: 3.3125em;/*53/16*/
+}
+footer span{
+	float: left;
+}
+footer ul{
+ 	float: right;
+ 	width: 27.34375%;/*245/896*100*/
+}
+footer ul li{
+ 	float: left;
+ 	list-style: none;
+ 	margin-left:12.6530612244898%;/*31/208*100*/
+}
+footer ul li a{
+ 	text-decoration: none;
+ 	color: #ffffff;	
+}
+footer ul li a:hover{
+ 	text-decoration: none;
+ 	color: #3f6f18;	
+}
+/*==================== C O N T A C T ============================*/
+
+#divContentForm1A, #divContentForm1B,#divContentForm2{
+	width: 48%;/*384/800*100*/
+	display: inline-block;
+}
+#divContentForm1B{
+	float: right;
+}
+
+#divContentForm3{
+	width: 100%;
+}
+#divContentForm2 label, #divContentForm3 label,#divContentForm1A label, #divContentForm1B label{
+	margin-top:1.625em;/*26/16*/
+	margin-bottom: 1em;/*16/16*/
+}
+#divContentForm2 input, #divContentForm3 input,#divContentForm1A input, #divContentForm1B input{
+	border-radius: 0;
+	margin: 0;
+}
+#divContentForm3 textarea{
+	width: 100%;
+	height: 11.25em;/*180/16*/
+}
+#btnEnviar{
+	font-size:1.6rem; 
+	float: right;
+	margin-top: 1.25em;/*20/16*/
+	background-color: #83b759;
+	border:none;
+	color: #ffffff;
+	padding: 0.5625em 5.022321428571429%;/*9/16 45/896*100*/
+}
+#btnEnviar:hover{
+	background-color: #3f6f18;
+}
+#content .form-group{
+	margin-bottom: 0px;
+}
+/*Clearfix*/
+.clearfix:after,.clearfix:before
+{
+	content: '';
+	display: table;
+}
+.clearfix:after 
+{
+	clear: both
+}
+
+/*media queries 600*/
+@media (max-width: 600px) {
+/*HOME*/
+	header #logo{
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+	nav{
+		width: 62%;
+		float: none;
+		margin: 0 auto;
+	}
+	nav ul{
+		margin-top: 0;
+		text-align: center;
+	}
+	footer span, footer ul{
+		float: none;
+		margin: 0 auto;
+		width:62%; 
+		margin-top: 1.5625em;/*25/16*/
+	}
+	footer span{
+		display: block;
+		text-align: center;
+	}
+	#content{
+		border:none;
+	}
+	#content p{
+		font-family: 'Conv_mriam';
+		font-weight: bold;
+	}
+	
+/*CONTACT*/
+	#divContentForm1B{
+		float: none;
+	}
+	#divContentForm1A, #divContentForm1B,#divContentForm2{
+		width: 100%;
+		display: inline-block;
+	}
+	#btnEnviar{
+		width: 100%;
+	}
+	#divContentForm2 label, #divContentForm3 label,#divContentForm1A label, #divContentForm1B label,#btnEnviar{
+		font-family: 'Conv_mriam';
+	}
+
+}
