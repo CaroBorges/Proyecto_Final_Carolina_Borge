@@ -3,4 +3,18 @@
 }
 #divContentVideoSection{
 	width:960px;
+	margin: 0 auto;
+	background-color:green;
+		header{
+			height:100px;
+			background-color:blue;
+
+			}
+}
+#navVideoSection{
+	ul{
+		li{
+			float:left;
+		}	
+	}
 }
