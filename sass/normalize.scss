@@ -75,6 +75,41 @@ html { font-size: 62.5% }
 }
 
 //---------------------About Me section------------------------------
+#divWraperAboutSection{
+	width:100%;
+	background-color:$orange;
+
+	#divContentAboutSection{
+		max-width:960px;
+		margin: 0px auto;
+		padding:10px 0;
+		header{
+
+		h1{
+			font-family:$font-title;
+			font-size:6.0rem;
+			text-align: Center;
+			color:$white;
+		}
+		h3{
+			font-family:$font-content;
+			color:$white;
+			text-align: Center;
+			font-size:1.6rem;
+		}
+		}
+		#contentAboutSection{
+
+		.columnAbout{
+		width:230px;
+		float:left;
+		}
+		}
+	}	
+}
+
+
+
 .clearfix:after,.clearfix:before
 {
 	content: '';
