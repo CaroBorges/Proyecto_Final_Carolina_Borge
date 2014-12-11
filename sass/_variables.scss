@@ -5,15 +5,18 @@ $font-menu:'Anton', sans-serif;
 $font-title:'Pacifico', cursive;
 $font-content:'arial';
 
-$green:#0f7f56;
+$green:#00AF77;
 $white:#ffffff;
 $turquoise:#7ec1c1;
-$darkTurquoise:#1b7e7e;
+$darkTurquoise:#12716C;
 $orange:#f2884e;
+$purple:#44266D;
+$brown:#917A42;
 
-/*
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;        
-  border-radius: $radius
-}*/
+  border-radius: $radius;
+  }
+

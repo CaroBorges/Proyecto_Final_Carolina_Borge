@@ -1,57 +1,67 @@
 html { font-size: 62.5% }
-
-//---------------------Video section------------------------------
-
-#divWraperVideoSection{
+//------general Style--------
+#divWraperVideoSection, #divWraperAboutSection, #divWraperPortfolioSection, #divWraperContactSection{
 	width:100%;
-	background-color:$darkTurquoise;
+	display: table;
 }
-
-#divContentVideoSection{
+#divContentVideoSection, #divContentAboutSection, #divContentPortfolioSection, #divContentContactSection{
 	max-width:960px;
 	margin: 0px auto;
 	padding:10px 0;
+}
+#videoSection .titles, #divContentAboutSection header .titles, #divContentPortfolioSection header .titles, #divContentContactSection header .titles{
+	font-family:$font-title;
+	font-size:6.0rem;
+	text-align: Center;
+	color:$white;
+	margin:0;
+	padding-top:20px;
+	border-top: 1px dashed $white;
+}
+#videoSection .subTitles, #divContentAboutSection header .subTitles, #divContentPortfolioSection header .subTitles, #divContentContactSection header .subTitles, #socialIcons .subTitles{
+	font-family:$font-content;
+	color:$white;
+	text-align: Center;
+	font-size:1.6rem;
+	
+}
+//---------------------Video section------------------------------
 
-		header{
-			height:90px;  /*calc-em(118px,16px);*/
-			border-bottom: 1px dashed $white;
+#divWraperVideoSection{
+	background-color:$darkTurquoise;
 
-				#navVideoSection{
-				width: 600px;
-				margin: 0 auto;
-					
-					ul{
+	#divContentVideoSection{
 
-						li{
-							float:left;
-							list-style:none;
-							margin:40px 45px;
-							font-size:2.0rem;/*20*/
-							font-family:$font-menu;
-						a{
-						color:$white;
-						text-decoration:none;
+			header{
+				height:80px;  /*calc-em(118px,16px);*/
+				border-bottom: 1px dashed $white;
+
+					#navVideoSection{
+						width: 600px;
+						margin: 0 auto;
 						
-						&:hover{
-							color:red;
-						}
+						ul{
+							li{
+								float:left;
+								list-style:none;
+								margin:30px 45px;
+								font-size:2.0rem;/*20*/
+								font-family:$font-menu;
+							a{
+							color:$white;
+							text-decoration:none;
+							
+							&:hover{
+								color:red;
+							}
 
+						}
 					}
 				}
 			}
 		}
+
 	}
-
-}
-
-#videoSection{
-	#Videotitle{
-		font-family:$font-title;
-		font-size:6.0rem;
-		text-align: Center;
-		color:$white;
-	}
-
 	video{
 		width: 562px;
 		margin:15px auto;
@@ -59,11 +69,11 @@ html { font-size: 62.5% }
 		display: inherit;
 	}
 	#presentation{
-	font-family:$font-content;
-	color:$white;
+		font-family:$font-content;
+		color:$white;
 		h2{
-		text-align:center;
-		font-size:3.0rem;
+			text-align:center;
+			font-size:3.0rem;
 		}
 		h3{
 			text-align:center;
@@ -71,37 +81,15 @@ html { font-size: 62.5% }
 
 		}
 	}
+} 
 	
-}
-
 //---------------------About Me section------------------------------
 #divWraperAboutSection{
-	width:100%;
-	background-color:$orange;
+	background-color:$turquoise;
 
 	#divContentAboutSection{
-		max-width:960px;
-		margin: 0px auto;
-		padding:10px 0;
 		border-top: 1px dashed $white;
-		header{
 
-		h1{
-			font-family:$font-title;
-			font-size:6.0rem;
-			text-align: Center;
-			color:$white;
-			margin:0;
-			padding-top:20px;
-			border-top: 1px dashed $white;
-
-		}
-		h3{
-			font-family:$font-content;
-			color:$white;
-			text-align: Center;
-			font-size:1.6rem;
-		}
 		}
 		#contentAboutSection{
 			.columnAbout{
@@ -111,7 +99,7 @@ html { font-size: 62.5% }
 			}
 		}
 	}	
-}
+
 .columnAbout figcaption h3{
 	font-family:$font-menu;
 	font-size:3.0rem;
@@ -129,7 +117,7 @@ html { font-size: 62.5% }
 	text-align: justify;
 }
 
-//---------------------Sprites------------------------------
+//--------------Sprites---------
 .ir{
 	display: block;
 	text-indent: -99999px;
@@ -158,6 +146,55 @@ html { font-size: 62.5% }
 	height: 150px;
 	margin:0 auto;
 }
+//---------------------Portfolio section------------------------------
+
+#divWraperPortfolioSection{
+	background-color:$green;
+	
+	#divContentPortfolioSection{
+		#contentPortfolioSection{
+			figure{
+			float:left;
+			margin:20px 8px;
+			border:2px solid $white;
+			background-color:$white;
+			}
+		}
+
+	}
+}
+
+//---------------------Contact section------------------------------
+
+#divWraperContactSection{
+	background-color:$darkTurquoise;
+
+	#contentContactSection{
+	form{
+		width:500px;
+		margin:30px auto;
+
+		.form-group{
+			color:$white;
+			font-family:$font-content;
+			font-size:1.6rem;
+
+			label{
+				font-weight:normal;
+			}
+
+		}
+		#btnSubmit{
+			 @include border-radius(5px);
+			 color:$white;
+			 background-color:$purple;
+			 border:none;
+			 padding:5px;
+			}
+	}
+
+}
+}
 
 //---------------------Clearfix------------------------------
 .clearfix:after,.clearfix:before
@@ -171,6 +208,6 @@ html { font-size: 62.5% }
 }
 
 /*
-.container { @include border-radius(10px) }
+
 .sidebar{ width: calc-percent(360px,960px) }
 */
