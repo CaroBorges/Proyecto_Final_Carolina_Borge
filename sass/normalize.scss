@@ -1,46 +1,80 @@
 html { font-size: 62.5% }
 
-
+//---------------------Video section------------------------------
 
 #divWraperVideoSection{
 	width:100%;
 	background-color:$darkTurquoise;
-	height:118px;  /*calc-em(118px,16px);*/
 }
+
 #divContentVideoSection{
 	max-width:960px;
-	margin: 0 auto;
-		
+	margin: 0px auto;
+	padding:10px 0;
+
 		header{
-			height:118px;  /*calc-em(118px,16px);*/
-
+			height:90px;  /*calc-em(118px,16px);*/
 			border-bottom: 1px dashed $white;
-			}
-}
-#navVideoSection{
-border-bottom: 1px dashed $white;
-	ul{
-		li{
-			float:left;
-			list-style:none;
-			margin:50px 45px;
-			font-size:2.0rem;/*20*/
-			font-family:$font-title;
 
-				a{
-				color:$white;
-				text-decoration:none;
+				#navVideoSection{
+				width: 600px;
+				margin: 0 auto;
 					
-					&:hover{
-					color:red;
+					ul{
+
+						li{
+							float:left;
+							list-style:none;
+							margin:40px 45px;
+							font-size:2.0rem;/*20*/
+							font-family:$font-menu;
+						a{
+						color:$white;
+						text-decoration:none;
+						
+						&:hover{
+							color:red;
+						}
 
 					}
-
 				}
 			}
 		}
 	}
 
+}
+
+#videoSection{
+	#Videotitle{
+		font-family:$font-title;
+		font-size:6.0rem;
+		text-align: Center;
+		color:$white;
+	}
+
+	video{
+		width: 562px;
+		margin:15px auto;
+		border: 4px solid $white;
+		display: inherit;
+	}
+	#presentation{
+	font-family:$font-content;
+	color:$white;
+		h2{
+		text-align:center;
+		font-size:3.0rem;
+		}
+		h3{
+			text-align:center;
+			font-size:1.5rem;
+
+		}
+	}
+	
+}
+
+//---------------------About Me section------------------------------
 .clearfix:after,.clearfix:before
 {
 	content: '';
