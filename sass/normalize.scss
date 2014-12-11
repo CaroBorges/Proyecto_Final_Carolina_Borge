@@ -83,6 +83,7 @@ html { font-size: 62.5% }
 		max-width:960px;
 		margin: 0px auto;
 		padding:10px 0;
+		border-top: 1px dashed $white;
 		header{
 
 		h1{
@@ -90,6 +91,10 @@ html { font-size: 62.5% }
 			font-size:6.0rem;
 			text-align: Center;
 			color:$white;
+			margin:0;
+			padding-top:20px;
+			border-top: 1px dashed $white;
+
 		}
 		h3{
 			font-family:$font-content;
@@ -99,17 +104,62 @@ html { font-size: 62.5% }
 		}
 		}
 		#contentAboutSection{
-
-		.columnAbout{
-		width:230px;
-		float:left;
-		}
+			.columnAbout{
+				width:221px;
+				float:left;
+				margin:10px 9px;
+			}
 		}
 	}	
 }
+.columnAbout figcaption h3{
+	font-family:$font-menu;
+	font-size:3.0rem;
+	text-align:center;
+}
+.columnAbout figcaption span{
+	font-family:$font-content;
+	font-size:1.8rem;
+	text-align:center;
+	display: block;
+}
+.columnAbout figcaption p{
+	font-family:$font-content;
+	font-size:1.4rem;
+	text-align: justify;
+}
 
+//---------------------Sprites------------------------------
+.ir{
+	display: block;
+	text-indent: -99999px;
+}
+.img_tv {
+	background: url('../images/images_sprite.png') no-repeat -12px -7px;
+	width: 150px;
+	height: 150px;
+	margin:0 auto;
+}
+.img_music{
+	background: url('../images/images_sprite.png')  no-repeat -165px -7px;
+	width: 150px;
+	height: 150px;
+	margin:0 auto;
+}
+.img_clothes{
+	background: url('../images/images_sprite.png') no-repeat -317px -7px;
+	width: 150px;
+	height: 150px;
+	margin:0 auto;
+}
+.img_food{
+	background: url('../images/images_sprite.png') no-repeat -469px -7px;
+	width: 150px;
+	height: 150px;
+	margin:0 auto;
+}
 
-
+//---------------------Clearfix------------------------------
 .clearfix:after,.clearfix:before
 {
 	content: '';
