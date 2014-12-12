@@ -1,5 +1,7 @@
 html { font-size: 62.5% }
-//------general Style--------
+
+//------general Style--------------------------
+
 #divWraperVideoSection, #divWraperAboutSection, #divWraperPortfolioSection, #divWraperContactSection{
 	width:100%;
 	display: table;
@@ -52,7 +54,7 @@ html { font-size: 62.5% }
 							text-decoration:none;
 							
 							&:hover{
-								color:red;
+								color:$orange;
 							}
 
 						}
@@ -81,7 +83,12 @@ html { font-size: 62.5% }
 
 		}
 	}
-} 
+}
+#img_Up{
+	position:flixed;
+	left:10px;
+    top:100px;
+}
 	
 //---------------------About Me section------------------------------
 #divWraperAboutSection{
