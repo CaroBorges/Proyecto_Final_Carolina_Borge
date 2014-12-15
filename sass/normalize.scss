@@ -9,7 +9,7 @@ html { font-size: 62.5% }
 #divContentVideoSection, #divContentAboutSection, #divContentPortfolioSection, #divContentContactSection{
 	max-width:960px;
 	margin: 0px auto;
-	padding:10px 0;
+	padding: calc-em(10, 16) 0;
 }
 #videoSection .titles, #divContentAboutSection header .titles, #divContentPortfolioSection header .titles, #divContentContactSection header .titles{
 	font-family:$font-title;
@@ -17,15 +17,14 @@ html { font-size: 62.5% }
 	text-align: Center;
 	color:$white;
 	margin:0;
-	padding-top:20px;
-	border-top: 1px dashed $white;
+	padding-top:calc-em(10,16);
+	border-top: calc-em(1,60) dashed $white;
 }
 #videoSection .subTitles, #divContentAboutSection header .subTitles, #divContentPortfolioSection header .subTitles, #divContentContactSection header .subTitles, #socialIcons .subTitles{
 	font-family:$font-content;
 	color:$white;
 	text-align: Center;
 	font-size:1.6rem;
-	
 }
 //---------------------Video section------------------------------
 
@@ -34,13 +33,14 @@ html { font-size: 62.5% }
 
 	#divContentVideoSection{
 
-			header{
-				height:80px;  /*calc-em(118px,16px);*/
-				border-bottom: 1px dashed $white;
+		header{
+			
+			border-bottom: 1px dashed $white;
 
-					#navVideoSection{
-						width: 600px;
-						margin: 0 auto;
+
+				#navVideoSection{
+					width: calc-percent(600,960);
+					margin: 0 auto;
 						
 						ul{
 							li{
@@ -49,18 +49,18 @@ html { font-size: 62.5% }
 								margin:30px 45px;
 								font-size:2.0rem;/*20*/
 								font-family:$font-menu;
-							a{
-							color:$white;
-							text-decoration:none;
+								a{
+									color:$white;
+									text-decoration:none;
 							
-							&:hover{
-								color:$orange;
-							}
+									&:hover{
+										color:$orange;
+									}
 
+								}
+							}
 						}
-					}
 				}
-			}
 		}
 
 	}
@@ -80,14 +80,14 @@ html { font-size: 62.5% }
 		h3{
 			text-align:center;
 			font-size:1.5rem;
-
 		}
 	}
 }
+
 #img_Up{
-	position:flixed;
-	left:10px;
-    top:100px;
+	position:fixed;
+	left:1050px;
+    top:500px;
 }
 	
 //---------------------About Me section------------------------------
