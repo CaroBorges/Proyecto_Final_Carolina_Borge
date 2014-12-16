@@ -1,4 +1,13 @@
-html { font-size: 62.5% }
+body{
+	background-color: #fff;
+}
+@font-face {
+	@font-family-base;
+	@font-size-base;
+	@line-height-base;
+
+}
+	html { font-size: 62.5% }
 
 //------general Style--------------------------
 
@@ -125,29 +134,22 @@ html { font-size: 62.5% }
 	display: block;
 	text-indent: -99999px;
 }
-.img_tv {
-	background: url('../images/images_sprite.png') no-repeat -12px -7px;
+.img_tv, .img_music, .img_clothes, .img_food{
 	width: 150px;
 	height: 150px;
 	margin:0 auto;
+}
+.img_tv {
+	background: url('../images/images_sprite.png') no-repeat -12px -7px;
 }
 .img_music{
 	background: url('../images/images_sprite.png')  no-repeat -165px -7px;
-	width: 150px;
-	height: 150px;
-	margin:0 auto;
 }
 .img_clothes{
 	background: url('../images/images_sprite.png') no-repeat -317px -7px;
-	width: 150px;
-	height: 150px;
-	margin:0 auto;
 }
 .img_food{
 	background: url('../images/images_sprite.png') no-repeat -469px -7px;
-	width: 150px;
-	height: 150px;
-	margin:0 auto;
 }
 //---------------------Portfolio section------------------------------
 
@@ -175,43 +177,83 @@ html { font-size: 62.5% }
 	background-color:$darkTurquoise;
 
 	#contentContactSection{
-	form{
-		width:calc-percent(500,960);
-		margin:calc-em(30,16) auto;
+		form{
+			width:calc-percent(500,960);
+			margin:calc-em(30,16) auto;
 
-			.form-group{
-				color:$white;
-				font-family:$font-content;
-				font-size:1.6rem;
+				.form-group{
+					color:$white;
+					font-family:$font-content;
+					font-size:1.6rem;
 
-			label{
-				font-weight:normal;
+				label{
+					font-weight:normal;
+				}
 			}
+		#btnSubmit{
+			@include border-radius(5px);
+			color:$white;
+			background-color:$purple;
+			border:none;
+			padding:calc-em(5,16);
 		}
-	#btnSubmit{
-		@include border-radius(5px);
-		color:$white;
-		background-color:$purple;
-		border:none;
-		padding:calc-em(5,16);
-	}
-	}
+		}
 
 	}
 }
-
 //---------------------Clearfix------------------------------
-.clearfix:after,.clearfix:before
-{
+.clearfix:after,.clearfix:before{
 	content: '';
 	display: table;
 }
-.clearfix:after 
-{
+.clearfix:after {
 	clear: both
 }
+//-------------------media queries----------------------/
+@media (max-width: 600px){
 
-/*
+#divWraperVideoSection{
+	background-color:$darkTurquoise;
 
-.sidebar{ width: calc-percent(360px,960px) }
-*/
+	#divContentVideoSection{
+		header{
+			border-bottom: calc-em(1,60) dashed $white;
+			
+			#navVideoSection{
+				width: calc-percent(600,960);
+				margin: 0 auto;
+						
+					ul{
+						li{
+							margin:calc-em(10,20) calc-percent(30,600);
+							font-size:1.6rem;/*20*/
+						}
+					}
+			}
+		}
+
+	}
+}
+
+.columnAbout figcaption h3{
+	font-family:$font-menu;
+	font-size:2.0rem;
+	text-align:center;
+}
+.columnAbout figcaption span{
+	font-family:$font-content;
+	font-size:1.6rem;
+	text-align:center;
+	display: block;
+}
+.columnAbout figcaption p{
+	font-family:$font-content;
+	font-size:1.2rem;
+	text-align: justify;
+}
+
+}
+
+@media (max-width: 480px){
+
+}
