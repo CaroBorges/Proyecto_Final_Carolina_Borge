@@ -32,43 +32,41 @@ html { font-size: 62.5% }
 	background-color:$darkTurquoise;
 
 	#divContentVideoSection{
-
 		header{
-			
-			border-bottom: 1px dashed $white;
-
-
-				#navVideoSection{
-					width: calc-percent(600,960);
-					margin: 0 auto;
+			border-bottom: calc-em(1,60) dashed $white;
+			#navVideoSection{
+				width: calc-percent(600,960);
+				margin: 0 auto;
 						
-						ul{
-							li{
-								float:left;
-								list-style:none;
-								margin:30px 45px;
-								font-size:2.0rem;/*20*/
-								font-family:$font-menu;
-								a{
-									color:$white;
-									text-decoration:none;
-							
-									&:hover{
-										color:$orange;
-									}
-
+					ul{
+						li{
+							float:left;
+							list-style:none;
+							margin:calc-em(30,20) calc-percent(45,600);
+							font-size:2.0rem;/*20*/
+							font-family:$font-menu;
+							a{
+								color:$white;
+								text-decoration:none;
+						
+								&:hover{
+									color:$orange;
 								}
+
 							}
 						}
+					}
 				}
 		}
 
 	}
 	video{
-		width: 562px;
-		margin:15px auto;
-		border: 4px solid $white;
-		display: inherit;
+		width:calc-percent(562,960);
+		margin:calc-em(15,16) auto;
+		border-width:calc-em(4,16) calc-percent(4,960);
+		border-style: solid;
+		border-color:$white;
+		display:inherit;
 	}
 	#presentation{
 		font-family:$font-content;
@@ -83,7 +81,6 @@ html { font-size: 62.5% }
 		}
 	}
 }
-
 #img_Up{
 	position:fixed;
 	left:1050px;
@@ -91,18 +88,19 @@ html { font-size: 62.5% }
 }
 	
 //---------------------About Me section------------------------------
+
 #divWraperAboutSection{
 	background-color:$turquoise;
 
 	#divContentAboutSection{
-		border-top: 1px dashed $white;
+		border-top: calc-em(1,60) dashed $white;
 
 		}
 		#contentAboutSection{
 			.columnAbout{
-				width:221px;
+				width:calc-percent(221,960);
 				float:left;
-				margin:10px 9px;
+				margin:calc-em(10,16) calc-percent(9,960);
 			}
 		}
 	}	
@@ -162,8 +160,10 @@ html { font-size: 62.5% }
 		#contentPortfolioSection{
 			figure{
 			float:left;
-			margin:20px 8px;
-			border:2px solid $white;
+			margin:calc-em(20,16) calc-percent(8,960);
+			border-width:calc-em(2,16) calc-percent(2,960);
+			border-style: solid;
+			border-color:$white;
 			background-color:$white;
 			}
 		}
@@ -178,8 +178,8 @@ html { font-size: 62.5% }
 
 	#contentContactSection{
 	form{
-		width:500px;
-		margin:30px auto;
+		width:calc-percent(500,960);
+		margin:calc-em(30,16) auto;
 
 		.form-group{
 			color:$white;
@@ -189,14 +189,13 @@ html { font-size: 62.5% }
 			label{
 				font-weight:normal;
 			}
-
 		}
 		#btnSubmit{
 			 @include border-radius(5px);
 			 color:$white;
 			 background-color:$purple;
 			 border:none;
-			 padding:5px;
+			 padding:calc-em(5,16);
 			}
 	}
 
