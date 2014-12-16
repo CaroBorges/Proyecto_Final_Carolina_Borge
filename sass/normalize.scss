@@ -63,9 +63,7 @@ html { font-size: 62.5% }
 	video{
 		width:calc-percent(562,960);
 		margin:calc-em(15,16) auto;
-		border-width:calc-em(4,16) calc-percent(4,960);
-		border-style: solid;
-		border-color:$white;
+		border:4px solid $white ;
 		display:inherit;
 	}
 	#presentation{
@@ -157,14 +155,14 @@ html { font-size: 62.5% }
 	background-color:$green;
 	
 	#divContentPortfolioSection{
+
 		#contentPortfolioSection{
 			figure{
 			float:left;
 			margin:calc-em(20,16) calc-percent(8,960);
-			border-width:calc-em(2,16) calc-percent(2,960);
-			border-style: solid;
-			border-color:$white;
+			border:2px solid $white ;
 			background-color:$white;
+
 			}
 		}
 
@@ -181,25 +179,25 @@ html { font-size: 62.5% }
 		width:calc-percent(500,960);
 		margin:calc-em(30,16) auto;
 
-		.form-group{
-			color:$white;
-			font-family:$font-content;
-			font-size:1.6rem;
+			.form-group{
+				color:$white;
+				font-family:$font-content;
+				font-size:1.6rem;
 
 			label{
 				font-weight:normal;
 			}
 		}
-		#btnSubmit{
-			 @include border-radius(5px);
-			 color:$white;
-			 background-color:$purple;
-			 border:none;
-			 padding:calc-em(5,16);
-			}
+	#btnSubmit{
+		@include border-radius(5px);
+		color:$white;
+		background-color:$purple;
+		border:none;
+		padding:calc-em(5,16);
+	}
 	}
 
-}
+	}
 }
 
 //---------------------Clearfix------------------------------
